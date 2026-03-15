@@ -91,38 +91,45 @@ Note: do while not used in python but we can enumerate it using while with infin
 
 
 '''2️⃣ Sum of digits'''
-# def count_digits(n):
-#     sum_of_digits = 0
+# def sum_of digits(n):
+#     total = 0
 #     while(n>0):
 #         digit = n % 10
-#         sum_of_digits += digit
+#         total += digit
 #         n = n // 10
-#     return sum_of_digits
-# res = count_digits(128)
+#     return total
+# res = sum_of_digits(128)
 # print(res)
 
 '''3️⃣ Reverse a number (no string conversion)'''
-# def reverse_number(n):
-#     reversed_number = ""
-#     while(n>0):
+def reverse_no(n):
+    reversed_no = 0
+    while(n > 0):
+        digit = n % 10
+        reversed_no = reversed_no * 10 + digit
+        n = n // 10
+    return reversed_no
+res = reverse_no(12445)
+print(res)
+'''4️⃣ Check palindrome number'''
+# def is_palindrome(n):
+#     original_number = n
+#     reversed_no = 0
+#     while(n > 0):
 #         digit = n % 10
-#         reversed_number += digit
+#         reversed_no = reversed_no * 10 + digit
 #         n = n // 10
-#     return reversed_number
-# res = reverse_number(128)
+#     return(original_number == reversed_no)
+# res = is_palindrome(12331)
 # print(res)
 
-
-'''4️⃣ Check palindrome number'''
-
 '''5️⃣ Print digits individually'''
-def individual_digits(n):
-    while(n>0):
-        digit = n % 10
-        print(digit)
-        n = n // 10
-individual_digits(128)
-
+# def individual_digits(n):
+#     while(n>0):
+#         digit = n % 10
+#         print(digit)
+#         n = n // 10
+# individual_digits(123454)
   
 
         
