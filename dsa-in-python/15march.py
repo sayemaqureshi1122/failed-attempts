@@ -67,7 +67,63 @@
 # print(result)
 
 
+'''Loops -> 
+Note: do while not used in python but we can enumerate it using while with infinite loop and break statement'''
+# i = 0
+# while True:
+#     print(i)
+#     if(i % 2 == 0):
+#         print("even")
+#         break
+#     i += 1
+    
 
+''' 1️⃣ Count digits in a number'''
+# def count_digits(n):
+#     count = 0
+#     while(n>0):
+#         digit = n % 10
+#         count += 1
+#         n = n // 10
+#     return count
+# res = count_digits(12)
+# print(res)
+
+
+'''2️⃣ Sum of digits'''
+# def count_digits(n):
+#     sum_of_digits = 0
+#     while(n>0):
+#         digit = n % 10
+#         sum_of_digits += digit
+#         n = n // 10
+#     return sum_of_digits
+# res = count_digits(128)
+# print(res)
+
+'''3️⃣ Reverse a number (no string conversion)'''
+# def reverse_number(n):
+#     reversed_number = ""
+#     while(n>0):
+#         digit = n % 10
+#         reversed_number += digit
+#         n = n // 10
+#     return reversed_number
+# res = reverse_number(128)
+# print(res)
+
+
+'''4️⃣ Check palindrome number'''
+
+'''5️⃣ Print digits individually'''
+def individual_digits(n):
+    while(n>0):
+        digit = n % 10
+        print(digit)
+        n = n // 10
+individual_digits(128)
+
+  
 
         
       
