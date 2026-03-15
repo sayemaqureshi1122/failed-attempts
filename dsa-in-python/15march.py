@@ -54,14 +54,19 @@
 
 # Q8] Strings - Write a function:def is_palindrome(s):Return True if string is palindrome.
 
-def is_palindrome(s):
-    new_s = s[len(s)::-1]
-    if new_s == s:
-        return "is palindrome"
-    else:
-        return "not a palindrome"        
-res = is_palindrome("12231")
-print(res)
+# def is_palindrome(s):
+#     new_s = s[len(s)::-1]
+#     if new_s == s:
+#         return "is palindrome"
+#     else:
+#         return "not a palindrome"        
+# res = is_palindrome("12231")
+# print(res)
+#list comprehension
+# result = [(i*i) for i in range(1,21)if (i%2)==0]
+# print(result)
+
+
 
 
         
