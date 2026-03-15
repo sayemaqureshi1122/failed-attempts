@@ -40,5 +40,14 @@
 # res = reverse_number(1234)
 # print(res)
 
+#Q5] — Lists: Write a function:def find_max(nums):Return the largest element in the list without using max().
+def find_max(nums):
+    max = 0
+    for i in range(len(nums)):
+        if nums[i] > max:
+            max = nums[i]
+    return max  
+res = find_max([3, 7, 2, 9, 1]) 
+print(res)  
 
-        
+
