@@ -15,11 +15,12 @@
 a =int(input())
 b = int(input())
 
-# # to swap
-# a1 = a ^ b
-# print(a1)
-# b1 = a1 ^ b
-# print(b1)
-# a2 = b1 ^ a1
-# print(a2, b1)
+# to swap
+a1 = a ^ b
+print(a1)
+b1 = a1 ^ b
+print(b1)
+a2 = b1 ^ a1
+print(a2, b1)
 # #got the ans as both the numbers are swapped 
+
