@@ -41,13 +41,29 @@
 # print(res)
 
 #Q5] — Lists: Write a function:def find_max(nums):Return the largest element in the list without using max().
-def find_max(nums):
-    max = 0
-    for i in range(len(nums)):
-        if nums[i] > max:
-            max = nums[i]
-    return max  
-res = find_max([3, 7, 2, 9, 1]) 
-print(res)  
+# def find_max(nums):
+#     max = 0
+#     for i in range(len(nums)):
+#         if nums[i] > max:
+#             max = nums[i]
+#     return max  
+# res = find_max([3, 7, 2, 9, 1]) 
+# print(res)  
 
+#Q6] Question 6 — Dictionaries - > Write a function:def count_letters(word):Return a dictionary showing frequency of each character.
+
+# Q8] Strings - Write a function:def is_palindrome(s):Return True if string is palindrome.
+
+def is_palindrome(s):
+    new_s = s[len(s)::-1]
+    if new_s == s:
+        return "is palindrome"
+    else:
+        return "not a palindrome"        
+res = is_palindrome("12231")
+print(res)
+
+
+        
+      
 
