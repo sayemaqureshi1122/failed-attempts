@@ -101,31 +101,33 @@ Note: do while not used in python but we can enumerate it using while with infin
 # res = sum_of_digits(128)
 # print(res)
 
-'''3️⃣ Reverse a number (no string conversion)'''
-def reverse_no(n):
-    reversed_no = 0
-    while(n > 0):
-        digit = n % 10
-        reversed_no = reversed_no * 10 + digit
-        n = n // 10
-    return reversed_no
-res = reverse_no(12445)
-print(res)
-'''4️⃣ Check palindrome number'''
-# def is_palindrome(n):
-#     original_number = n
+'''3️⃣ Reverse a number (no string conversion)''' 
+# def reverse_no(n):
 #     reversed_no = 0
 #     while(n > 0):
 #         digit = n % 10
 #         reversed_no = reversed_no * 10 + digit
 #         n = n // 10
-#     return(original_number == reversed_no)
+#     return reversed_no
+# res = reverse_no(9000)
+# print(res)
+'''Note: - if the number is ending with zero then when reversed will start with zero but it does not store preceding zeros 9000->0009->op will be 9'''
+
+'''4️⃣ Check palindrome number'''
+# def is_palindrome(n):
+#     original_number = n
+#     reversed_no = 0
+#     while (n > 0):
+#         digit = n % 10
+#         reversed_no = reversed_no * 10 + digit
+#         n = n // 10
+#     return original_number == reversed_no
 # res = is_palindrome(12331)
 # print(res)
 
 '''5️⃣ Print digits individually'''
 # def individual_digits(n):
-#     while(n>0):
+#     while n>0:
 #         digit = n % 10
 #         print(digit)
 #         n = n // 10
@@ -133,5 +135,6 @@ print(res)
   
 
         
-      
-
+n = -123      
+n = -(n)
+print(n)
