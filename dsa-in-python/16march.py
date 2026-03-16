@@ -16,3 +16,51 @@
         Zero
         empty sequence - "" -> empty str, () -> empty tuple, [] -> empty list, {} -> empty dict.
 '''
+
+'''Q1] Problem 1 — Even or Odd'''
+# def check_even_odd(n):
+#     if n % 2 == 0:
+#         return "Even"
+#     else:
+#         return "Odd"
+# res = check_even_odd(28)
+# print(res)
+
+''' Q2] Problem 2 — Positive / Negative / Zero'''
+# def number_type(n):
+#     if n == 0:
+#         return "Zero"
+#     elif n > 0:
+#         return "Positive"
+#     else:
+#         return "Negative"
+# res = number_type(0)
+# print(res)
+
+'''Q3] Problem 3 — Largest of Three Numbers'''
+def largest_of_three(a, b, c):
+    if a > b and a > c:
+        return a
+    elif b > a and b > c:
+        return b
+    else :
+        return c
+res = largest_of_three(4, 8, 5)
+print(res)
+
+'''Q4] Problem 4 — Leap Year'''
+# def is_leap_year(year)
+'''Q5] Problem 5 — Grade Calculator'''
+# def calculate_grade(marks):
+#     if marks >= 90:
+#         return "A"
+#     elif marks >= 75 and marks <= 89:
+#         return "B"
+#     elif marks >= 50 and marks <= 74:
+#         return "C"
+#     elif marks >= 35 and marks <= 49:
+#         return "D"
+#     else:
+#         return "F"
+# res = calculate_grade(35)
+# print(res)
