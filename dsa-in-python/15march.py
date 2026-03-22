@@ -111,7 +111,27 @@ Note: do while not used in python but we can enumerate it using while with infin
 #     return reversed_no
 # res = reverse_no(9000)
 # print(res)
-'''Note: - if the number is ending with zero then when reversed will start with zero but it does not store preceding zeros 9000->0009->op will be 9'''
+'''Note: - if the number is ending with zero then when reversed will start with zero but it does not store preceding zeros 9000->0009->op will be 9
+
+2] also always remember the edge case -> when number is negative
+'''
+def negative_number_reverse(n):
+    reverse = 0
+    sign = 1
+    if n < 0:
+        sign *= -1
+    # sign = -1 if n < 0 else 1
+    n = abs(n)
+    while n > 0:
+        digit = n % 10
+        reverse = reverse * 10 + digit
+        n = n // 10
+    return sign * reverse
+res = negative_number_reverse(-909989)
+print(res)
+    
+# Here tracking the sign allows us to put negative sign when needed only
+
 
 '''4️⃣ Check palindrome number'''
 # def is_palindrome(n):
@@ -135,6 +155,6 @@ Note: do while not used in python but we can enumerate it using while with infin
   
 
         
-n = -123      
-n = -(n)
-print(n)
+# n = -123      
+# n = -(n)
+# print(n)

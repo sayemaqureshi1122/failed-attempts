@@ -38,15 +38,19 @@
 # print(res)
 
 '''Q3] Problem 3 — Largest of Three Numbers'''
-def largest_of_three(a, b, c):
-    if a > b and a > c:
-        return a
-    elif b > a and b > c:
-        return b
-    else :
-        return c
-res = largest_of_three(4, 8, 5)
-print(res)
+# def largest_of_three(a, b, c):
+#     if a > b and a > c:
+#         return a
+#     elif b > a and b > c:
+#         return b
+#     else :
+#         return c
+# res = largest_of_three(4, 5, 5)
+# print(res)
+
+#using built -in function
+list1 = [1, 5, 5]
+print(max(list1))
 
 '''Q4] Problem 4 — Leap Year'''
 # def is_leap_year(year)
