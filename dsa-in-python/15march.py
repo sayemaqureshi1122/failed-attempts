@@ -121,7 +121,7 @@ def negative_number_reverse(n):
     if n < 0:
         sign *= -1
     # sign = -1 if n < 0 else 1
-    n = abs(n)
+    n = abs(n) # ye n ko postive banane ke liye hai kyuki sign retain hua hai upar n nhi change hua.
     while n > 0:
         digit = n % 10
         reverse = reverse * 10 + digit
