@@ -65,18 +65,18 @@
 # print(res)
     
 
-'''Q4] Problem 4 — Leap Year'''
-def is_leap_year(year):
-    if year % 400 == 0 :
-        return True
-    elif year % 100 == 0:
-        return False
-    elif year % 4 == 0:
-        return True
-    else:
-        return False
-res = is_leap_year(1900)
-print(res)
+# '''Q4] Problem 4 — Leap Year'''
+# def is_leap_year(year):
+#     if year % 400 == 0 :
+#         return True
+#     elif year % 100 == 0:
+#         return False
+#     elif year % 4 == 0:
+#         return True
+#     else:
+#         return False
+# res = is_leap_year(1900)
+# print(res)
 
 '''Note: always use boolean logic instead of "is a leap year" use true false. '''
 
