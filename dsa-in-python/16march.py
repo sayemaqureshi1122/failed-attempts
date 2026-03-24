@@ -81,16 +81,16 @@
 '''Note: always use boolean logic instead of "is a leap year" use true false. '''
 
 '''Q5] Problem 5 — Grade Calculator'''
-# def calculate_grade(marks):
-#     if marks >= 90:
-#         return "A"
-#     elif marks >= 75 and marks <= 89:
-#         return "B"
-#     elif marks >= 50 and marks <= 74:
-#         return "C"
-#     elif marks >= 35 and marks <= 49:
-#         return "D"
-#     else:
-#         return "F"
-# res = calculate_grade(35)
-# print(res)
+def calculate_grade(marks):
+    if marks >= 90:
+        return "A"
+    elif marks >= 75 and marks <= 89:
+        return "B"
+    elif marks >= 50 and marks <= 74:
+        return "C"
+    elif marks >= 35 and marks <= 49:
+        return "D"
+    else:
+        return "F"
+res = calculate_grade(35)
+print(res)
