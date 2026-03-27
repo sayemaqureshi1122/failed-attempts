@@ -62,3 +62,20 @@ h1 = list(enumerate(sorted_courses))
 print(h1)
 h2 = enumerate(sorted_courses)
 print(next(h2)) 
+
+
+tuple1 = (1, 2, 3, 4)
+l1 = list(tuple1)
+l1.insert(0, 0)
+tuple2 = tuple(l1)
+
+print(tuple1)
+print(tuple2)
+
+
+set1 = {"math", "science", "sports"}
+set2 = {"art", "design", "math"}
+print(set1.intersection(set2))
+print(set1.difference(set2)) # set 1 ke reference me
+print(set2.difference(set1))
+print(set1.union(set2))
