@@ -85,8 +85,8 @@ Set methods -- > cannot store duplicate values
 # nums = list(map(int,input("enter list: ").split()))
 # def find_max(nums):
 #     maximum = nums[0]
-#     for i in range(len(nums)-1):
-#         if nums[i] > max:
+#     for i in range(len(nums)):
+#         if nums[i] > maximum:
 #             maximum = nums[i]
 #     return maximum
 # res = find_max(nums)
@@ -96,7 +96,7 @@ Set methods -- > cannot store duplicate values
 nums = list(map(int,input("enter list: ").split()))
 # def find_min(nums):
 #     minimum = nums[0]
-#     for i in range(len(nums)-1):
+#     for i in range(len(nums)):
 #         if nums[i] < minimum:
 #             minimum = nums[i]
 #     return minimum
@@ -104,19 +104,27 @@ nums = list(map(int,input("enter list: ").split()))
 # print(res)
             
 '''3️⃣ Second Largest (IMPORTANT)'''
-def second_largest(nums):
-    largest = nums[0]
-    second_largest = nums[0]
-    for i in range(len(nums)-1):
-        if nums[i] > largest:
-            largest = nums[i]
+# def second_largest(nums):
+#     largest = nums[0]
+#     second_largest = nums[0]
+#     for i in range(len(nums)):
+#         if nums[i] > largest:
+#             largest = nums[i]
         
-    for j in range(len(nums)-1):
-        if nums[j] > second_largest and nums[j] < largest:
-            second_largest = nums[j]
-    return second_largest ,largest
-res = second_largest(nums)
-print(res)
+#     for j in range(len(nums)):
+#         if nums[j] > second_largest and nums[j] < largest:
+#             second_largest = nums[j]
+#     return second_largest ,largest, len(nums)
+# res = second_largest(nums)
+# print(res)
+
+'''4️⃣ Count Occurrences'''
+
+'''5️⃣ Reverse List (Manual)'''
+def reverse_list(nums):
+    
+    
+    
 
        
     
