@@ -85,9 +85,20 @@ Set methods -- > cannot store duplicate values
 # nums = list(map(int,input("enter list: ").split()))
 # def find_max(nums):
 #     maximum = nums[0]
-#     for i in range(len(nums)):
+#     for i in nums:
 #         if nums[i] > maximum:
 #             maximum = nums[i]
+#     return maximum
+# res = find_max(nums)
+# print(res)
+
+''' after changes
+note -  cannot compare a list and a int '''
+# def find_max(nums):
+#     maximum = nums[0]
+#     for i in nums:
+#         if i > maximum:
+#             maximum = i
 #     return maximum
 # res = find_max(nums)
 # print(res)
@@ -103,7 +114,20 @@ nums = list(map(int,input("enter list: ").split()))
 # res = find_min(nums)
 # print(res)
             
-'''3️⃣ Second Largest (IMPORTANT)'''
+'''after change'''
+# def find_min(nums):
+#     minimum = nums[0]
+#     for i in nums:
+#         if i < minimum:
+#             minimum = i
+#     return minimum
+# res = find_min(nums)
+# print(res)
+
+'''3️⃣ Second Largest (IMPORTANT) 
+note - >
+1]this was o(n^2) time complexity which is wrong practice
+2] always make sure u are handling duplicate values'''
 # def second_largest(nums):
 #     largest = nums[0]
 #     second_largest = nums[0]
@@ -117,13 +141,43 @@ nums = list(map(int,input("enter list: ").split()))
 #     return second_largest ,largest, len(nums)
 # res = second_largest(nums)
 # print(res)
-
+ 
+'''o(n)  - complexity '''
+# def second_largest(nums):
+#     largest = float("-inf")
+#     second = float("-inf")
+    
+#     for i in nums:
+#         if i > largest:
+#             second = largest
+#             largest = i
+#         elif i > second and i != largest:
+#             second = i
+#         elif second == float("-inf"):
+#             return None
+#     return second
+# res = second_largest(nums)
+# print(res)
+     
 '''4️⃣ Count Occurrences'''
+# def count_occurrences(nums, target):
+#     count = 0
+#     for i in nums:
+#         if i == target:
+#             count += 1
+#     return count
+# res = count_occurrences(nums, 3)
+# print(res)
 
 '''5️⃣ Reverse List (Manual)'''
-def reverse_list(nums):
-    
-    
+# def reverse_list(nums):
+#     num1 = [] 
+#     for i in range(len(nums)):
+#         num1.append(nums[len(nums)-1-i])  
+#     return num1
+# res = reverse_list(nums)
+# print(res)
+         
     
 
        
