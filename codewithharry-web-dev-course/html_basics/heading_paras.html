@@ -1,0 +1,47 @@
+<!-- div.container ie "." is used to create a class element
+ div#header ie "#" is used to create a id component
+ 
+ 1] ul>li*3 -> here ">" this means child
+ 2] h1+p here "+" is for siblings means under same div or section
+ 3] *  - for repetition
+ 4] id should be a unique element and cannot be reused
+ 5] class - reuseable element can is preferred over id
+ 4] br tag -  for new line (this is a self closing tag)
+
+
+Note - 
+1]Heading tags are not used to change text size (that’s a beginner mistake). They are used to define the hierarchy and structure of a webpage, which helps browsers and search engines understand the content while parsing.
+2] html by default add space between two  para
+3] never nest para in another para
+4] html never parses extra space it will consider that as a single space so for line breaks we use br tag.
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heading and paras</title>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div id="header"></div>
+    <ul class="list">
+      <div class="container"></div>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <section class="container">
+        <h1>Welcome</h1>
+        <p>This is my site</p>
+        <a href="https://www.google.com">Go to goggle</a>
+      </section>
+    </ul>
+    <div class="note2">
+        <p>Welcome</p><p>to my webpage</p> 
+    </div>
+    
+  </body>
+</html>

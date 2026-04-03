@@ -153,8 +153,8 @@ note - >
 #             largest = i
 #         elif i > second and i != largest:
 #             second = i
-#         elif second == float("-inf"):
-#             return None
+#     if second == float("-inf"):
+#         return None
 #     return second
 # res = second_largest(nums)
 # print(res)
