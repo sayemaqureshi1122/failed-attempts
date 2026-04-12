@@ -3,7 +3,7 @@
 # with open("my_file.txt", "w") as f:
 #     print("I am your little secret", file = f)
     
-# # u won't see any output here but u will find that it either creates or if already there a file named my file.txt and there u can see the output so the file output in print statement tell the python interpreter where to show the output.
+# # u won't see any output here but u will find that it either creates or if already there a file named my file.txt and there u can see the output so the file feature in print statement tell the python interpreter where to show the output.
 
 # ''' for flush'''
 # import time
@@ -15,7 +15,7 @@
 
 
 ''' Escape seq char'''
-print("i am a very \"good girl\".\nI like reading books") # here we know ki agar bina \ ke likhte to error ata hence we use escape seq char
+print("i am a very \"good girl\".\nI like reading books") # here we know ki agar bina \ ke likhte to error ata hence we use escape seq char.
 
 
 
