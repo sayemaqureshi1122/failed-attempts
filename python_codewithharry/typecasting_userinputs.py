@@ -13,6 +13,7 @@
 
 num1 = int(input("enter a number: "))
 num2 = int(input("enter a number: "))
+print(oct(num1))
 print(num1 + num2)
 print(num1 - num2)
 print(num1 * num2)
