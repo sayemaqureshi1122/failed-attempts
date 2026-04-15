@@ -96,25 +96,61 @@
 # print(res)
 
 
-# 4] .replace(input_str, old_word, new_word)
-def manual_replace(text, old_word, new_word):
-    result = " "
-    old_len = len(old_word)
-    i = 0
-    while i < len(text):
-        if text[i:i + old_len] == old_word:
-            result += new_word
-            i += old_len
-        else:
-            result += text[i]
-            i += 1
+# # 4] .replace(input_str, old_word, new_word)
+# def manual_replace(text, old_word, new_word):
+#     result = " "
+#     old_len = len(old_word)
+#     i = 0
+#     while i < len(text):
+#         if text[i:i + old_len] == old_word:
+#             result += new_word
+#             i += old_len
+#         else:
+#             result += text[i]
+#             i += 1
             
-    return result
-input_str = "I have a Red car and a Red bike"
-res = manual_replace(input_str, "a", "is")  
+#     return result
+# input_str = "I have a Red car and a Red bike"
+# res = manual_replace(input_str, "a", "is")  
+# print(res)
+
+# # 2 edge cases - 1] if we put old word = "a" and new word = "is" we get I hisve is Red cisr isnd is Red bik cuz python doesn't know english it just checks the sequence .
+# # 2]  The Case-Sensitivity Problem - "Red".replace("red", "Blue") will do nothing. It returns "Red" unchanged.
+
+# # 5] .count()
+# def manual_count(text, word):
+#     count = 0
+#     word_len = len(word)
+#     i = 0
+#     while i < len(text):
+#         if text[i:i+word_len] == word:
+#             count += 1
+#             i += word_len
+#         else:
+#             i += 1
+#     return count
+# input_str = "apple is a fruit , we should eat apple everyday. An apple a day keeps doctor away"
+# res = manual_count(input_str,"apple")
+# print(res)
+
+# 6] find() and index() 
+def manual_findMethod(text, word):
+    i = 0
+    word_len = len(word)
+    while i < len(text):
+        if text[i:word_len+i] == word:
+             return i
+        else : 
+             i += 1
+    #return -1
+    #raise ValueError("substring not found")  #we add this line instead of return -1 for index() method as it throws an error we it cannot find the word in the string.
+input_str = "we should eat apple everyday. An apple a day keeps may doctor away."
+res = manual_findMethod(input_str, "may")
 print(res)
 
-# 2 edge cases - 1] if we put old word = "a" and new word = "is" we get I hisve is Red cisr isnd is Red bik cuz python doesn't know english it just checks the sequence .
-# 2] 
+
     
+
+
         
+  
