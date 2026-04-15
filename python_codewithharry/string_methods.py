@@ -133,20 +133,20 @@
 # res = manual_count(input_str,"apple")
 # print(res)
 
-# 6] find() and index() 
-def manual_findMethod(text, word):
-    i = 0
-    word_len = len(word)
-    while i < len(text):
-        if text[i:word_len+i] == word:
-             return i
-        else : 
-             i += 1
-    #return -1
-    #raise ValueError("substring not found")  #we add this line instead of return -1 for index() method as it throws an error we it cannot find the word in the string.
-input_str = "we should eat apple everyday. An apple a day keeps may doctor away."
-res = manual_findMethod(input_str, "may")
-print(res)
+# # 6] find() and index() 
+# def manual_findMethod(text, word):
+#     i = 0
+#     word_len = len(word)
+#     while i < len(text):
+#         if text[i:word_len+i] == word:
+#              return i
+#         else : 
+#              i += 1
+#     #return -1
+#     #raise ValueError("substring not found")  #we add this line instead of return -1 for index() method as it throws an error we it cannot find the word in the string.
+# input_str = "we should eat apple everyday. An apple a day keeps may doctor away."
+# res = manual_findMethod(input_str, "may")
+# print(res)
 
 
     
