@@ -148,9 +148,15 @@
 # res = manual_findMethod(input_str, "may")
 # print(res)
 
-
-    
-
-
-        
-  
+# to count the occurrence of a particular sub_string in a string
+def count_of_subString(text, subString):
+    len_subString = len(subString)
+    count = 0
+    for i in range(len(text) - len_subString + 1):
+        if text[i:i+ len_subString] == subString:
+            count += 1
+    return count
+input_str = "ABCADCBABCACBABC"
+res = count_of_subString(input_str, "ABC")
+print(res)
+            
